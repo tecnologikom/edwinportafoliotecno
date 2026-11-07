@@ -6,32 +6,26 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f4f6f8;
+    background-color: #eef2f7; /* Fondo gris azulado suave */
 }
 
 /* Encabezado */
 header {
     text-align: center;
-    border-bottom: 2px solid #0056b3;
     padding-bottom: 20px;
     margin-bottom: 30px;
 }
 
-.logo {
-    max-width: 80px;
-    height: auto;
-    display: block;
-    margin: 0 auto 10px auto;
-}
-
+/* Foto de perfil: arriba, centrada y pequeña (~8 veces más chica) */
 .foto-perfil {
-    width: 150px;
-    height: 150px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #0056b3;
+    border: 3px solid #0056b3;
     display: block;
     margin: 0 auto 15px auto;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
 h1 {
@@ -41,40 +35,59 @@ h1 {
 }
 
 .subtitle {
-    font-size: 1.1em;
+    font-size: 1.05em;
     color: #555;
     font-style: italic;
 }
 
-/* Secciones */
+/* Secciones como tarjetas blancas */
+section {
+    background: #ffffff;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-left: 5px solid #0056b3;
+}
+
 h2 {
     color: #0056b3;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 5px;
-    margin-top: 35px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 6px;
+    margin-top: 0;
+    font-size: 1.4em;
 }
 
 h3 {
     color: #333;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    font-size: 1.1em;
 }
 
 ul {
     list-style-type: square;
-    padding-left: 25px;
+    padding-left: 22px;
 }
 
 li {
     margin-bottom: 8px;
 }
 
+/* Logo: al final, centrado y pequeño */
+.logo {
+    display: block;
+    margin: 30px auto 10px auto;
+    max-width: 60px;
+    height: auto;
+    opacity: 0.9;
+}
+
 /* Pie de página */
 footer {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
     font-size: 0.9em;
     color: #777;
-    border-top: 1px solid #ccc;
-    padding-top: 15px;
+    padding-top: 10px;
 }
