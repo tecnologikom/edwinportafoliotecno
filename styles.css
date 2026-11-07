@@ -18,8 +18,8 @@ header {
 
 /* Foto de perfil: arriba, centrada y pequeña (~8 veces más chica) */
 .foto-perfil {
-    width: 60px;
-    height: 60px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #0056b3;
