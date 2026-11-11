@@ -77,24 +77,38 @@ h3 {
     margin-bottom: 10px;
 }
 
+/* --- ESTILOS PARA LAS LISTAS TIPO BOTÓN --- */
+
 ul {
     list-style-type: none; /* Quitamos los puntos por defecto */
     padding-left: 0;
+    display: flex; /* Hace que los botones se acomoden uno al lado del otro */
+    flex-wrap: wrap; /* Si no caben, saltan a la siguiente línea */
+    gap: 10px; /* Espacio entre botones */
+    margin-top: 10px;
 }
 
 li {
-    margin-bottom: 8px;
-    padding-left: 20px;
-    position: relative;
+    background-color: rgba(0, 40, 0, 0.5); /* Fondo verde muy oscuro */
+    border: 1px solid #00ff00; /* Borde verde Matrix */
+    padding: 8px 15px;
+    border-radius: 20px; /* Esto les da la forma de óvalo/cápsula */
+    font-size: 0.9em;
+    transition: all 0.3s ease; /* Hace que el cambio de color sea suave */
+    cursor: default;
 }
 
-/* Viñeta personalizada estilo Matrix */
+/* Efecto al pasar el mouse o tocar el botón */
+li:hover {
+    background-color: #00ff00; /* El fondo se vuelve verde brillante */
+    color: #000000; /* La letra se vuelve negra para que se lea */
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.8); /* Efecto de resplandor neón */
+    transform: scale(1.05); /* El botón crece un poquito */
+}
+
+/* Quitamos la flechita ">" que teníamos antes */
 li::before {
-    content: ">"; 
-    position: absolute;
-    left: 0;
-    color: #00ff00;
-    font-weight: bold;
+    content: none; 
 }
 
 /* Logo al final */
